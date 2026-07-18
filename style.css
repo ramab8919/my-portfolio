@@ -77,9 +77,15 @@ nav a:hover{
 
 #hero{
     min-height: calc(100vh - 100px);
-    display: flex;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
     align-items: center;
-    justify-content: flex-start;
+
+    gap: 80px;
+
     padding: 0 110px;
 }
 
@@ -161,4 +167,107 @@ nav a:hover{
 
 .secondary-btn:hover{
     background: rgba(255,255,255,.06);
+}
+/* 
+   Hero Image */
+
+/* 
+   Hero Image
+=========================== */
+
+.hero-image{
+
+    position: relative;
+
+    height: 700px;
+
+    width: 100%;
+
+}
+.hero-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    background:#8B5CF6;
+
+    border-radius:50%;
+
+    filter:blur(140px);
+
+    opacity:.22;
+
+    z-index:-1;
+
+}
+.phone-left{
+
+    position: absolute;
+
+    width: 300px;
+
+    top: 30px;
+
+    left: 20px;
+
+    transform: rotate(-18deg);
+
+    animation: floatLeft 6s ease-in-out infinite;
+
+    filter: drop-shadow(0 40px 90px rgba(168,85,247,.25));
+
+}
+
+.phone-right{
+
+    position: absolute;
+
+    width: 330px;
+
+    right: 20px;
+
+    top: 250px;
+
+    transform: rotate(18deg);
+
+    animation: floatRight 6s ease-in-out infinite;
+
+    filter: drop-shadow(0 40px 90px rgba(168,85,247,.25));
+
+}
+@keyframes floatLeft{
+
+    0%{
+        transform:translateY(0) rotate(-8deg);
+    }
+
+    50%{
+        transform:translateY(-18px) rotate(-8deg);
+    }
+
+    100%{
+        transform:translateY(0) rotate(-8deg);
+    }
+
+}
+
+@keyframes floatRight{
+
+    0%{
+        transform:translateY(0) rotate(8deg);
+    }
+
+    50%{
+        transform:translateY(18px) rotate(8deg);
+    }
+
+    100%{
+        transform:translateY(0) rotate(8deg);
+    }
+
 }
