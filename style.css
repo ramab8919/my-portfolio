@@ -530,3 +530,67 @@ nav a:hover{
     box-shadow:0 15px 35px rgba(139,92,246,.25);
 
 }
+/* Contact
+*/
+
+#contact{
+
+    padding:140px 110px;
+
+    text-align:center;
+
+}
+
+.contact-text{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#9CA3AF;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:22px;
+
+    margin-top:60px;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-buttons a{
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#111111;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+
+}
+
+.contact-buttons a:hover{
+
+    background:#8B5CF6;
+
+    transform:translateY(-5px);
+
+}
