@@ -410,3 +410,74 @@ nav a:hover{
     color:white;
 
 }
+/* 
+   About
+ */
+
+#about{
+
+    padding:140px 110px;
+
+}
+
+.about-description{
+
+    max-width:700px;
+
+    color:#A1A1AA;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:60px;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:28px;
+
+}
+
+.about-card{
+
+    background:#0E0E12;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.3s;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#8B5CF6;
+
+}
+
+.about-card h3{
+
+    margin-bottom:14px;
+
+    font-size:24px;
+
+}
+
+.about-card p{
+
+    color:#9CA3AF;
+
+    line-height:1.7;
+
+}
