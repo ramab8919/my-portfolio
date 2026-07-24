@@ -565,3 +565,255 @@ body::after{
     }
 
 }
+/*====================================
+        UX Research
+====================================*/
+
+#research{
+
+    padding:220px 110px;
+
+    position:relative;
+
+}
+
+#research::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:650px;
+    height:650px;
+
+    right:-220px;
+    top:40px;
+
+    background:#8B5CF6;
+
+    opacity:.08;
+
+    border-radius:50%;
+
+    filter:blur(170px);
+
+    z-index:-1;
+
+}
+
+.section-tag{
+
+    color:#8B5CF6;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:14px;
+
+    margin-bottom:18px;
+
+}
+
+.section-heading{
+
+    font-size:72px;
+
+    line-height:1.05;
+
+    margin-bottom:30px;
+
+    max-width:750px;
+
+}
+
+.section-description{
+
+    max-width:760px;
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#A1A1AA;
+
+    margin-bottom:90px;
+
+}
+
+.research-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr 1fr;
+
+    gap:32px;
+
+    align-items:stretch;
+
+}
+
+.research-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(30px);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:34px;
+
+    padding:45px;
+
+    transition:.45s;
+
+}
+
+.research-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    right:-90px;
+    top:-90px;
+
+    background:#8B5CF6;
+
+    opacity:.12;
+
+    filter:blur(90px);
+
+}
+
+.research-card:nth-child(2){
+
+    transform:translateY(-35px);
+
+    background:linear-gradient(
+        145deg,
+        rgba(168,85,247,.12),
+        rgba(255,255,255,.04)
+    );
+
+}
+
+.research-card:hover{
+
+    transform:translateY(-18px) scale(1.03);
+
+    border-color:#8B5CF6;
+
+    box-shadow:0 40px 90px rgba(139,92,246,.18);
+
+}
+
+.research-card span{
+
+    font-size:72px;
+
+    font-weight:800;
+
+    color:rgba(255,255,255,.05);
+
+}
+
+.research-card h3{
+
+    font-size:30px;
+
+    margin:25px 0 20px;
+
+}
+
+.research-card p{
+
+    color:#A1A1AA;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+/*====================================
+        Research Insight
+====================================*/
+
+#insight{
+
+    padding:120px 110px 220px;
+
+}
+
+.insight-box{
+
+    position:relative;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:80px;
+
+    border-radius:40px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.03);
+
+    backdrop-filter:blur(40px);
+
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+.insight-box::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    right:-180px;
+    top:-180px;
+
+    background:#8B5CF6;
+
+    opacity:.15;
+
+    filter:blur(140px);
+
+}
+
+.quote{
+
+    font-size:42px;
+
+    line-height:1.5;
+
+    font-weight:700;
+
+    margin-bottom:35px;
+
+    max-width:850px;
+
+}
+
+.quote-description{
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#A1A1AA;
+
+}
