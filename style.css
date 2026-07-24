@@ -139,11 +139,25 @@ nav a:hover{
 
 .primary-btn,
 .secondary-btn{
-    padding: 18px 34px;
-    border-radius: 999px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: .3s;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
 .primary-btn{
@@ -361,13 +375,93 @@ nav a:hover{
 
 }
 
-.project-image::before{
+.project-image{
 
-    content:"Coming Soon";
+    position:relative;
 
-    color:#6B7280;
+    height:260px;
 
-    font-size:18px;
+    overflow:hidden;
+
+    background:#16161E;
+
+}
+.project-1{
+
+    background:linear-gradient(
+        135deg,
+        #32205F,
+        #111827
+    );
+
+}
+
+.project-2{
+
+    background:linear-gradient(
+        135deg,
+        #0F172A,
+        #1E293B
+    );
+
+}
+
+.project-3{
+
+    background:linear-gradient(
+        135deg,
+        #3F2A16,
+        #171717
+    );
+
+}
+.project-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.45);
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+.project-card:hover .project-overlay{
+
+    opacity:1;
+
+}
+
+.project-overlay a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 28px;
+
+    border-radius:999px;
+
+    background:#8B5CF6;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-overlay a:hover{
+
+    transform:scale(1.05);
 
 }
 
@@ -592,5 +686,10 @@ nav a:hover{
     background:#8B5CF6;
 
     transform:translateY(-5px);
+
+}
+html{
+
+    scroll-behavior:smooth;
 
 }
